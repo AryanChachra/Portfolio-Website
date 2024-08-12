@@ -152,25 +152,37 @@
             </div>
             <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Project Cards -->
-                <div class="bg-gray-950 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-500 hover:scale-105">
-                    <img src="https://aicontentfy.com/hubfs/Blog/f389b398-609c-44f5-87b5-abf28af7c8ca.jpg" alt="Project 1" class="w-full h-40 object-cover">
+                <div class="project-card bg-gray-950 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-500 hover:scale-105 relative">
+                    <img src="https://aicontentfy.com/hubfs/Blog/f389b398-609c-44f5-87b5-abf28af7c8ca.jpg" alt="Project" class="w-full h-40 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-purple-700 dark:text-purple-400">Weather Forecasting using Data Science</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mt-2">In this Project, I have used python and its libraries like numpy, pandas, scikit learn to analyse data and train a Machine Learning model which forecasts weather.</p>
+                        <p class="text-gray-500 dark:text-gray-300 mt-2">In this Project, I have used python and its libraries like numpy, pandas, scikit learn to analyse data and train a Machine Learning model which forecasts weather.</p>
+                        <button class="mt-4 text-purple-600 dark:text-purple-400 underline"><a href="">View Project</a></button>
+                    </div>
+                    <div class="absolute inset-0 bg-purple-600 opacity-0 hover:opacity-90 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white text-lg bg-gray-950 p-4">Tech Stack: HTML, CSS, JS</span>
                     </div>
                 </div>
-                <div class="bg-gray-950 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-500 hover:scale-105">
-                    <img src="https://rtosoftware.eskilled.com.au/wp-content/uploads/2021/11/ESK-Article-SMS-110421-03-scaled.jpg" alt="Project 2" class="w-full h-40 object-cover">
+                <div class="project-card bg-gray-950 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-500 hover:scale-105 relative">
+                    <img src="https://rtosoftware.eskilled.com.au/wp-content/uploads/2021/11/ESK-Article-SMS-110421-03-scaled.jpg" alt="Project" class="w-full h-40 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-purple-700 dark:text-purple-400">Student managment system</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mt-2">This project was made with the help of python and MySQL. in this I used python's tkinter library for front-end and made a database locally using MySQL and connected it using python library named pymysql.</p>
+                        <p class="text-gray-500 dark:text-gray-300 mt-2">This project was made with the help of python and MySQL. in this I used python's tkinter library for front-end and made a database locally using MySQL and connected it using python library named pymysql.</p>
+                        <button class="mt-4 text-purple-600 dark:text-purple-400 underline"><a href="">View Project</a></button>
+                    </div>
+                    <div class="absolute inset-0 bg-purple-600 opacity-0 hover:opacity-90 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white text-lg bg-gray-950 p-4">Tech Stack: HTML, CSS, JS</span>
                     </div>
                 </div>
-                <div class="bg-gray-950 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-500 hover:scale-105">
-                    <img src="https://m.media-amazon.com/images/I/61QVmvv6rfL._AC_UF894,1000_QL80_.jpg" alt="Project 3" class="w-full h-40 object-cover">
+                <div class="project-card bg-gray-950 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-500 hover:scale-105 relative">
+                    <img src="https://m.media-amazon.com/images/I/61QVmvv6rfL._AC_UF894,1000_QL80_.jpg" alt="Project" class="w-full h-40 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold text-purple-700 dark:text-purple-400">Alarm clock</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mt-2">This project is made using python and its libraries like tkinter, pygame, datetime. it cintains a fromtend in whcih user can set alaem and it ring at the correct and and show a pop-up with message that a user has given with a stop button.</p>
+                        <h3 class="text-xl font-semibold text-purple-700 dark:text-purple-400">Alarm Clock</h3>
+                        <p class="text-gray-500 dark:text-gray-300 mt-2">This project is made using python and its libraries like tkinter, pygame, datetime. it cintains a fromtend in whcih user can set alaem and it ring at the correct and and show a pop-up with message that a user has given with a stop button.</p>
+                        <button class="mt-4 text-purple-600 dark:text-purple-400 underline"><a href="">View Project</a></button>
+                    </div>
+                    <div class="absolute inset-0 bg-purple-600 opacity-0 hover:opacity-90 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white text-lg bg-gray-950 p-4">Tech Stack: HTML, CSS, JS</span>
                     </div>
                 </div>
             </div>
@@ -231,6 +243,15 @@
     
 
     <script>
+        //smooth scroll
+         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
         // Toggle mobile menu
         document.getElementById('hamburger').addEventListener('click', function () {
             document.getElementById('mobileMenu').classList.toggle('hidden');
